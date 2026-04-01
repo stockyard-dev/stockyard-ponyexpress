@@ -1,0 +1,8 @@
+services:
+  ponyexpress:
+    image: ghcr.io/stockyard-dev/stockyard-ponyexpress:latest
+    ports: ["9010:9010"]
+    volumes: [ponyexpress-data:/data]
+    restart: unless-stopped
+volumes:
+  ponyexpress-data:
